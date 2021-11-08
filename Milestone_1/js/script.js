@@ -1,4 +1,4 @@
-[
+const data = [
 	{
 		name: 'cat',
 		prefix: 'fa-',
@@ -112,3 +112,24 @@
 		color: 'blue'
 	}
 ];
+
+
+const wrap = document.getElementById('main-wrap');
+layCards(data, wrap);
+
+
+function layCards(array, container){
+    array.forEach(element => {
+
+        const newCard = document.createElement("div");
+        newCard.className = "card";
+        container.appendChild(newCard);
+        let text = `
+            <i class="${element.family} ${element.prefix}${element.name}" style="color: "></i>
+            <span>${element.name}</span>
+        `
+        console.log(element.family);
+        newCard.innerHTML += text;
+        console.log(element.name);
+    });
+}

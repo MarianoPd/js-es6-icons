@@ -59,6 +59,8 @@ header .top-band{
     background-color: #f5f5f5;
     border-radius: 10px;
     box-shadow: 2px 2px gray;
+    margin-right: 50px;
+    margin-bottom: 50px;
 }
 
 .card > i{
