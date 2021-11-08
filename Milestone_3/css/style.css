@@ -43,7 +43,7 @@ header .top-band{
 #main-wrap{
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     background-color: #dddddd;
     min-height: calc(100vh - 130px);
     padding: 20px;
